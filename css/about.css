@@ -1,0 +1,431 @@
+/* =================================
+   ABOUT PAGE
+================================= */
+
+#about-page {
+    padding: 20px 0 70px;
+}
+
+
+/* =================================
+   ABOUT HEADING
+================================= */
+
+#about-page .about-heading {
+
+    height: 110px;
+
+    background-image: url("../Images/backround.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    padding-top: 22px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Heading */
+
+#about-page .about-heading h1 {
+
+    font-family: var(--second-family);
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #fff;
+
+    margin: 0 0 5px;
+}
+
+
+/* Subtitle */
+
+#about-page .about-heading p {
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #fff;
+
+    margin: 0;
+}
+
+
+/* =================================
+   ABOUT CONTENT
+================================= */
+
+#about-page .about-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* =================================
+   ABOUT IMAGE
+================================= */
+
+#about-page .about-photo {
+
+    width: 35%;
+
+    text-align: center;
+}
+
+
+#about-page .about-photo img {
+
+    width: 100%;
+
+    max-width: 300px;
+
+    height: auto;
+}
+
+
+/* =================================
+   ABOUT DETAILS
+================================= */
+
+#about-page .about-details {
+
+    width: 65%;
+}
+
+
+/* Description */
+
+#about-page .about-description {
+
+    max-width: 600px;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #7a7a7a;
+
+    margin-bottom: 60px;
+}
+
+
+/* =================================
+   ABOUT INFORMATION
+================================= */
+
+#about-page .about-info {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 45px;
+
+    row-gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Individual information */
+
+#about-page .about-info div {
+
+    display: flex;
+
+    align-items: center;
+
+    font-size: 13px;
+}
+
+
+/* Label */
+
+#about-page .about-info span {
+
+    color: #7a7a7a;
+
+    margin-right: 12px;
+}
+
+
+/* Value */
+
+#about-page .about-info strong {
+
+    font-weight: 500;
+
+    color: #353535;
+}
+
+
+/* Links */
+
+#about-page .about-info a {
+
+    color: #287cff;
+
+    text-decoration: underline;
+}
+
+
+/* =================================
+   DOWNLOAD BUTTON
+================================= */
+
+#about-page .about-cv {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #fc0;
+
+    color: #fff;
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+#about-page .about-cv i {
+
+    margin-left: 7px;
+}
+
+
+#about-page .about-cv:hover {
+
+    background: #353535;
+
+    color: #fff;
+}
+/* =================================
+   EXPERIENCE & EDUCATION
+================================= */
+
+#experience {
+    padding: 30px 0 90px;
+    border-top: 1px solid #cfcfcf;
+}
+
+
+/* Two columns */
+
+#experience .experience-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+
+/* Each column */
+
+#experience .timeline-column {
+    width: 50%;
+}
+
+
+/* Heading */
+
+#experience .timeline-column h2 {
+    font-family: var(--second-family);
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #353535;
+
+    margin: 0 0 38px;
+}
+
+
+/* =================================
+   TIMELINE
+================================= */
+
+#experience .timeline {
+    position: relative;
+
+    padding-left: 46px;
+}
+
+
+/* Vertical dashed line */
+
+#experience .timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 12px;
+    top: 6px;
+    bottom: 0;
+
+    width: 1px;
+
+    border-left: 1px dashed #777;
+}
+
+
+/* =================================
+   TIMELINE ITEM
+================================= */
+
+#experience .timeline-item {
+    position: relative;
+
+    padding-bottom: 48px;
+}
+
+
+/* =================================
+   OUTER CIRCLE
+================================= */
+
+#experience .timeline-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: -46px;
+    top: 0;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    border: 1px dashed #777;
+
+    z-index: 2;
+}
+
+
+/* =================================
+   INNER COLORED DOT
+================================= */
+
+#experience .timeline-item::after {
+    content: "";
+
+    position: absolute;
+
+    left: -40px;
+    top: 6px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    z-index: 3;
+}
+
+
+/* Green */
+
+#experience .timeline-item.green::after {
+    background: #58b77a;
+}
+
+
+/* Red */
+
+#experience .timeline-item.red::after {
+    background: #f16c6c;
+}
+
+
+/* Yellow */
+
+#experience .timeline-item.yellow::after {
+    background: #f5c518;
+}
+
+
+/* =================================
+   DATE
+================================= */
+
+#experience .timeline-date {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 13px;
+}
+
+
+#experience .timeline-date i {
+    font-size: 13px;
+    color: #888;
+}
+
+
+#experience .timeline-date span {
+    font-size: 12px;
+    color: #888;
+}
+
+
+/* =================================
+   TITLE
+================================= */
+
+#experience .timeline-item h4 {
+    font-family: var(--second-family);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #353535;
+
+    margin: 0 0 14px;
+}
+
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+#experience .timeline-item p {
+    max-width: 390px;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+
+    color: #777;
+
+    margin: 0;
+}   
